@@ -1,0 +1,1330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/*----------------general styles---------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    font-size: 44px;
+    line-height: 55px;
+    color: #121212;
+    font-weight: 600;
+}
+
+h6{
+    font-size: 20px;
+    line-height: 32px;
+    color: #6c6c6c;
+    margin-top: 16px;
+    font-weight: normal;
+}
+
+.btn{
+    display: inline-block;
+    border: none;
+    outline: none;
+    width: 7rem;
+    height: 2.3rem;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13spx;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+}
+
+.offset::before{
+    content: "";
+    display: block;
+    margin-top: -2px;
+    height: 3rem;
+}
+
+/*----------------general styles ends ---------------------*/
+
+/*----------------nav bar---------------------------------*/
+
+nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: transparent;
+    transition: all 0.5s ease;
+    padding-top: 10px;
+    width: 100vw;
+    z-index: 2; 
+}
+
+.nav.scroll{
+    background: white !important;
+    transition: background-color 200ms linear;
+    box-shadow: 7px 10px 15px rgba(0,0,0,0.3);
+}
+
+.nav .burger .burger-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #121212;
+    display: block;
+    position: relative;
+    margin: 4px;
+    transition: all 0.5s ease; 
+}
+
+.nav .burger{
+    display: none;
+    border: none;
+    outline: none;
+}
+
+.nav .nav-links .nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .nav-links .nav-items li{
+    margin: 0 10px;
+}
+
+.nav .nav-links .nav-items li a{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+.nav .nav-links .nav-items li a:hover{
+    color: rgba(92, 53, 163);
+}
+
+.nav .social-links a{
+    margin:  0 5px;
+}
+
+.nav .social-links a i{
+    color: #6c6c6c;
+}
+
+.nav .social-link-word{
+    font-weight: 600;
+    font-size: 13px;
+}
+/*----------------nav bar ends ---------------------*/
+
+
+
+/*----------------first section---------------------*/
+
+.main{
+    background:linear-gradient(180deg, rgba(255,255,255,80) 0%, rgba(255,255,255,0.3) 100%),
+    url(./images/6.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 120vh;
+    width: 100%;
+    position: relative;
+}
+
+.main .background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%; 
+}
+
+.main .background h3{
+    text-align: center;
+    font-size: 26px;
+    width: 60%;
+    line-height: 30px;
+}
+
+.main .background h6{
+    text-align: center;
+    color: black;
+    width: 80%;
+}
+
+.main .wave{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 0;
+}
+
+.main .wave img{
+    width: 100%;
+   vertical-align: top;
+}
+
+.main .buttons button{
+    margin: 15px 15px;
+}
+
+.main .buttons .fas{
+    padding-left: 6px;
+}
+
+.main .buttons .btn-one{
+    background: linear-gradient(30deg, #2904fa, rgba(132, 63, 189));
+   
+}
+
+.main .buttons .btn-one:hover{
+    background: linear-gradient(to left, #2904fa, rgba(132, 63, 189));
+}
+
+.main .buttons .btn-two{
+    color: rgb(97, 49, 209);
+    width: 10rem;
+    box-shadow: 0 1px 0 0 rgba(116, 114, 114, 0.514);
+}
+.main .buttons .btn-two:hover{
+    color: rgb(97, 49, 209);
+    box-shadow: 0 3px 0 0 rgba(116, 114, 114, 0.514);
+
+}
+
+/*----------------first section ends---------------------*/
+
+/*----------------services section---------------------*/
+
+.all-section{
+    padding: 4rem 4rem;
+    width: 100%;
+    height: 100%;
+}
+
+.all-section h2,
+.all-section h6{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.all-section h2{
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+
+.boxes .box-one{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.boxes .box-content-two{
+    padding: 0 4rem;
+}
+.boxes .box-content-one{
+    padding: 0 4rem;
+}
+
+.boxes .box-icon .fas{
+    color: rgb(104, 104, 211);
+    font-size: 40px;
+}
+
+.boxes .box-two{
+    display: flex;
+    flex-direction: row;
+}
+
+.service-img{
+    width: 50%;
+    height: 100px;
+}
+
+/*----------------services section ends---------------------*/
+
+
+/*----------------pricing section-----------------------------*/
+.table{
+    display: block;
+}
+
+.table h6{
+    margin-bottom: 5rem;
+}
+
+.table .pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.card{
+    width: 350px;
+    height: 100%;
+    border: 1px solid #9333c0;
+    border-radius: 20px;
+    
+}
+
+.standard{
+    position: relative;
+    top: -30px;
+    
+}
+
+.standard h1{
+    background: linear-gradient(to left, #2904fa, rgba(132, 63, 189));
+    color: #ffffff;
+}
+
+.card .price-content h1{
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #b3adad49;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    transition: all 0.5s ease;
+}
+
+.pricing .card:hover .price-content h1{
+    background: linear-gradient(to left, #2904fa, rgba(132, 63, 189));
+    color: #ffffff;
+    transition: all 1s ease-in;
+}
+
+.card .price-info{
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+}
+
+.card .price-info .currency{
+    font-weight: 300;
+    font-size: 28px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card .price-info .amount{
+    font-weight: 400;
+    font-size: 60px;
+    vertical-align: middle;
+    line-height: 60px;
+    padding: 0;
+    letter-spacing: -2px;
+
+}
+
+.card .price-info .decimal{
+    font-weight: 300;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.card .price-info .month{
+    font-weight: 300;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.card .card-content ul li{
+    border-top: 1px solid #ccc;
+    padding: 18px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.card .card-content ul li i{
+    padding: 0 10px;
+    color: rgb(96, 46, 212);
+}
+
+.card .buttons{
+    padding: 25px;
+}
+
+.card .buttons .change{
+    color: #ffffff;
+    background: linear-gradient(to left, #2904fa, rgba(132, 63, 189));
+    font-weight: normal;
+    text-transform: capitalize;
+    border-radius: 10px 0 10px 0;
+
+}
+
+.card .buttons .change:hover{
+    color: black;
+    background: white;
+    font-weight: normal;
+    text-transform: capitalize;
+    box-shadow: 0 1px 0 0 rgba(116, 114, 114, 0.514);
+    border: 1px solid green;
+    background-color: none;
+    border-radius: 10px 0 10px 0;
+}
+
+.card .buttons .btn-two{
+    color: black;
+    background: white;
+    font-weight: normal;
+    text-transform: capitalize;
+    box-shadow: 0 1px 0 0 rgba(116, 114, 114, 0.514);
+    border: 1px solid green;
+    background-color: none;
+    border-radius: 10px 0 10px 0;
+}
+
+.pricing .card:hover .buttons  .btn-two{
+    background: linear-gradient(to left, #2904fa, rgba(132, 63, 189));
+    color: #ffffff;
+}
+
+/*----------------pricing section ends----------------------------*/
+
+/*----------------about us section-=-------------------------------*/
+
+.padding{
+    position: relative;
+    padding: 0 110px;
+}
+
+.about-us{
+    background: linear-gradient(to left, #b602fd9d, rgba(255, 0, 0, 0)),
+    url(./images/2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us h2{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.about-us p{
+    width: 60%;
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 1.5rem;
+}
+
+.about-us .subscribe{
+    position: relative;
+    left: 1rem;
+}
+
+.about-us .subscribe .text{
+    display: inline-flex;
+    flex: 1;
+    height: 4rem;
+    width: 25rem;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding-left: 40px;
+}
+
+.about-us .subscribe .fas{
+    color: rgb(103, 60, 204);
+    font-size: 20px;
+    position: relative;
+    left: 35px;
+    padding-left: 40px;
+    top: 2px;
+}
+
+.about-us .subscribe .btn-four{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    position: relative;
+    right: 100px;
+    background: linear-gradient(to left, #2904fa, rgba(132, 63, 189));
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*----------------about us section ends----------------------------*/
+
+
+/*----------------contact-------------------------------------*/
+
+.forms{
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.forms input{
+    padding: 15px;
+    width: 20rem;
+    margin: .5rem 1rem;
+}
+
+.forms .text{
+    padding: 20px;
+}
+
+.forms textarea{
+    width: 42.5rem;
+    height: 10rem;
+    resize: none;
+    padding: 0 10px;
+    font-size: 15px;
+    font-family: 'Poppins'; 
+}
+
+.forms .submit{
+    outline: none;
+    color: white;
+    background: linear-gradient(to left, #2904fa, rgba(132, 63, 189));
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/*----------------contact ends----------------------------*/
+
+/*----------------footer----------------------------------*/
+
+.footer{
+    background: #e0dddd65;
+    padding: 50px 20px;
+}
+
+.footer img{
+    width: 50px;
+    
+}
+
+.footer .footer-one{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+}
+
+.footer .social-links{
+    position: relative;
+    top: 15px;
+    padding: 0 10px;
+}
+
+.footer .social-links i{
+    margin: 0 5px;
+    color: #6c6c6c;
+}
+
+.footer .footer-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.footer h6{
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.footer .nav-links .nav-items a{
+    color: #6c6c6c;
+}
+
+.footer input{
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 13px 10px;
+}
+
+.footer p{
+    padding-top: 10px;
+    font-size: 14px;
+    
+}
+
+.copyright{
+    padding: 20px;
+    background: #022063;
+}
+
+.copyright p{
+    color: white;
+    text-align: center;
+}
+
+.copyright a{
+    color: rgb(0, 221, 192);
+}
+
+/*----------------footer ends----------------------------*/
+
+@media only screen and (max-width: 946px){
+
+    /*----------------nav bar---------------------------------*/
+
+
+.nav .nav-links .nav-items{
+   padding-left: 40px;
+}
+
+.nav .nav-links .nav-items li{
+    margin: 0 10px;
+}
+
+.nav .nav-links .nav-items li a{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav .social-links{
+    display: none;
+}
+
+.nav .social-links a{
+    margin:  0 5px;
+}
+
+.nav .social-links a i{
+    color: #6c6c6c;
+}
+
+.nav .social-link-word{
+    font-weight: 600;
+    font-size: 13px;
+}
+/*----------------nav bar ends ---------------------*/
+
+/*----------------services section---------------------*/
+
+
+.services{
+    flex-direction: column-reverse;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: -80px;
+    
+}
+
+.boxes {
+    padding-top: 30rem;
+   
+}
+
+.service-img{
+    width: 90%;
+    height: 100px;
+}
+
+
+/*----------------services section ends---------------------*/
+
+
+/*----------------pricing section-----------------------------*/
+
+.table .pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/*----------------pricing section ends----------------------------*/
+
+
+/*----------------about us section-=-------------------------------*/
+
+.padding{
+    position: relative;
+    padding: 0 50px;
+    
+}
+
+.about-us{
+    background: linear-gradient(to left, #b602fd9d, rgba(255, 0, 0, 0)),
+    url(./images/2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+/*----------------about us section ends----------------------------*/
+
+    
+}
+
+@media only screen and (max-width: 774px){
+
+/*----------------nav bar---------------------------------*/
+
+.nav .burger {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 0 60px;
+    z-index: 10000;
+}
+
+.nav .nav-links{
+    background-color: rgba(255, 255, 255, 0.733);
+    height: 100vh;
+    position: absolute;
+    top: 60px;
+    width: 15rem;
+    right: -360px;
+    margin-right: 1rem;
+    transition: all 0.9s ease;
+}
+
+.nav .nav-links .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 20px 50px;
+}
+
+.nav .nav-links .nav-items li{
+    margin: 30px 5px;
+}
+
+/*----------------nav bar ends ---------------------*/
+
+/*----------------services section---------------------*/
+
+
+
+
+.all-section h2,
+.all-section h6{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.all-section h2{
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.services{
+    flex-direction: column-reverse;
+    padding-top: 1rem;
+    padding-bottom: -80px;
+    width: 100%;
+    
+}
+
+.boxes {
+    padding-top: 23rem;
+}
+
+
+.boxes .box-content-one {
+    padding: 0 1rem;
+}
+
+.boxes .box-content-two {
+    padding: 0 1rem;
+}
+
+.service-img{
+    width: 90%;
+    height: 100px;
+}
+
+
+.boxes .box-one{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.boxes .box-content-two{
+    width: 100%;
+}
+.boxes .box-content-one{
+    width: 100%;
+}
+
+.boxes .box-icon .fas{
+    color: rgb(104, 104, 211);
+    font-size: 30px;
+}
+
+.boxes .box-two{
+    display: flex;
+    flex-direction: row;
+}
+
+/*----------------services section ends---------------------*/
+
+
+/*----------------pricing section-----------------------------*/
+.table{
+    display: block;
+}
+
+.table h6{
+    margin-bottom: 5rem;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.table .pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.card{
+    width: 350px;
+    height: 100%;
+    border: 1px solid #9333c0;
+    border-radius: 20px;
+    
+}
+
+.table .pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.table .standard{
+    margin-top: 4rem;
+}
+
+/*----------------pricing section ends----------------------------*/
+
+/*----------------about us section---------------------------------*/
+.about-us p{
+    width: 60%;
+    font-size: 15px;
+    color: #ffffff;
+    padding-bottom: 1.5rem;
+}
+
+/*----------------about us section ends----------------------------*/
+
+.forms textarea{
+    width: 20rem;
+    height: 10rem;
+    resize: none;
+    padding: 0 10px;
+    font-size: 15px;
+    font-family: 'Poppins'; 
+}
+
+.offset h6{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/*----------------footer----------------------------------*/
+
+.footer{
+    background: #e0dddd65;
+    padding: 50px 10px;
+    
+}
+
+.footer img{
+    width: 50px;
+    
+}
+
+.footer .footer-one{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 50px;
+}
+
+.footer .social-links{
+    position: relative;
+    top: 15px;
+    padding: 0 10px;
+}
+
+.footer .social-links i{
+    margin: 0 5px;
+    color: #6c6c6c;
+}
+
+.footer .footer-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.footer .footer-two{
+    flex-wrap: wrap;
+}
+
+.footer h6{
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.footer .nav-links .nav-items a{
+    color: #6c6c6c;
+    font-size: 12px;
+}
+
+.footer input{
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 13px 10px;
+}
+
+.footer p{
+    padding-top: 10px;
+    font-size: 13px;
+    
+}
+
+
+
+/*----------------footer ends----------------------------*/
+
+
+
+}
+
+
+@media only screen and (max-width: 394px){
+/*----------------first section---------------------*/
+
+.main{
+    background:linear-gradient(180deg, rgba(255,255,255,80) 0%, rgba(255,255,255,0.3) 100%),
+    url(./images/6.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 120vh;
+    width: 100%;
+    position: relative;
+}
+
+.main .background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%; 
+}
+
+.main .background h3{
+    text-align: center;
+    font-size: 15px;
+    width: 60%;
+    line-height: 20px;
+}
+
+.main .background h6{
+    text-align: center;
+    color: black;
+    width: 80%;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/*----------------first section ends---------------------*/
+
+/*----------------services section---------------------*/
+
+.all-section{
+    padding: 4rem 4rem;
+    width: 100%;
+    height: 100%;
+}
+
+.all-section h2,
+.all-section h6{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.all-section h2{
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.all-section h6{
+    font-size: 13px;
+    line-height: 20px; 
+}
+
+.services{
+    flex-direction: column-reverse;
+    padding-top: 1rem;
+    padding-bottom: -80px;
+    width: 100%;
+    
+}
+
+.boxes {
+    padding-top: 7rem;
+}
+
+
+.boxes .box-content-one {
+    padding: 0 1rem;
+}
+
+.boxes .box-content-two {
+    padding: 0 1rem;
+}
+
+.service-img{
+    width: 90%;
+    height: 100px;
+}
+
+.boxes .box-one{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes .box-content-two{
+    width: 100%;
+    
+}
+.boxes .box-content-one{
+    width: 100%;
+    padding: 1rem;
+}
+
+.boxes .box-two{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes p{
+    font-size: 13px;
+}
+
+/*----------------services section ends---------------------*/
+
+
+/*----------------pricing section-----------------------------*/
+.table{
+    display: block;
+}
+
+.table h6{
+    margin-bottom: 5rem;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.table .pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.card{
+    width: 350px;
+    height: 100%;
+    border: 1px solid #9333c0;
+    border-radius: 20px;
+    
+}
+
+.table .pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.table .standard{
+    margin-top: 4rem;
+}
+
+/*----------------pricing section ends----------------------------*/
+
+/*----------------about us section-=-------------------------------*/
+
+.padding{
+    position: relative;
+    padding: 0 110px;
+}
+
+.about-us{
+    background: linear-gradient(to left, #b602fd9d, rgba(255, 0, 0, 0)),
+    url(./images/2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us h2{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.about-us p{
+    width: 60%;
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 1.5rem;
+}
+
+.about-us .subscribe{
+    position: relative;
+    left: 1rem;
+}
+
+.about-us .subscribe .text{
+    display: inline-flex;
+    flex: 1;
+    height: 4rem;
+    width: 25rem;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding-left: 40px;
+}
+
+.about-us .subscribe .fas{
+    color: rgb(103, 60, 204);
+    font-size: 20px;
+    position: relative;
+    left: 35px;
+    padding-left: 40px;
+    top: 2px;
+}
+
+.about-us .subscribe .btn-four{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    position: relative;
+    right: 100px;
+    background: linear-gradient(to left, #2904fa, rgba(132, 63, 189));
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*----------------about us section ends----------------------------*/
+
+
+/*----------------contact-------------------------------------*/
+
+.forms{
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.forms input{
+    padding: 15px;
+    width: 20rem;
+    margin: .5rem 1rem;
+}
+
+.forms .text{
+    padding: 20px;
+}
+
+.forms textarea{
+    width: 42.5rem;
+    height: 10rem;
+    resize: none;
+    padding: 0 10px;
+    font-size: 15px;
+    font-family: 'Poppins'; 
+}
+
+.forms .submit{
+    outline: none;
+    color: white;
+    background: linear-gradient(to left, #2904fa, rgba(132, 63, 189));
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/*----------------contact ends----------------------------*/
+
+/*----------------footer----------------------------------*/
+
+.footer{
+    background: #e0dddd65;
+    padding: 50px 20px;
+}
+
+.footer img{
+    width: 50px;
+    
+}
+
+.footer .footer-one{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+}
+
+.footer .social-links{
+    position: relative;
+    top: 15px;
+    padding: 0 10px;
+}
+
+.footer .social-links i{
+    margin: 0 5px;
+    color: #6c6c6c;
+}
+
+.footer .footer-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.footer h6{
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.footer .nav-links .nav-items a{
+    color: #6c6c6c;
+}
+
+.footer input{
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 13px 10px;
+}
+
+.footer p{
+    padding-top: 10px;
+    font-size: 14px;
+    
+}
+
+.copyright{
+    padding: 20px;
+    background: #022063;
+}
+
+.copyright p{
+    color: white;
+    text-align: center;
+}
+
+.copyright a{
+    color: rgb(0, 221, 192);
+}
+
+/*----------------footer ends----------------------------*/
+
+}
+
+
+
+
+
+
